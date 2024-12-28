@@ -67,6 +67,9 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Table\Table.cs" />
     <Compile Include="Assets\Scripts\Character\Reticle.cs" />
+    <Compile Include="Assets\Scripts\Table\CardSlot.cs" />
+    <Compile Include="Assets\Scripts\UI\DialogueManager.cs" />
+    <Compile Include="Assets\Scripts\UI\Dialogue.cs" />
     <Compile Include="Assets\Scripts\Table\Card.cs" />
   </ItemGroup>
   <ItemGroup>
