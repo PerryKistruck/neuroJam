@@ -1,0 +1,25 @@
+{
+  "emotionalResponses": {
+        "happy": [
+            "That's wonderful!",
+            "I'm so glad to hear that!",
+            "This makes me really happy!"
+        ],
+        "sad": [
+            "I'm sorry to hear that...",
+            "That must be difficult.",
+            "Things will get better."
+        ],
+        "angry": [
+            "Please calm down.",
+            "Let's talk this through.",
+            "I understand your frustration."
+        ],
+        "surprised": [
+            "Oh! I didn't expect that!",
+            "What a surprise!",
+            "That's unexpected!"
+        ]
+    }  
+
+}

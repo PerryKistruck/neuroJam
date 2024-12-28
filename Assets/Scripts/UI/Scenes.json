@@ -1,0 +1,65 @@
+{
+    "Scenes": [
+        {
+            "Id": 1,
+            "DialogueList": [
+                {
+                    "Id": 1,
+                    "Speaker": "Alice",
+                    "Text": "Hi! I've been waiting for you!",
+                    "SpeakerEmotion": "happy",
+                    "ListenerEmotion": "surprised",
+                    "NextDialogue": 2
+                },
+                {
+                    "Id": 2,
+                    "Speaker": "Bob",
+                    "Text": "Oh, I didn't know you'd be here!",
+                    "SpeakerEmotion": "surprised",
+                    "ListenerEmotion": "happy",
+                    "Choices": [
+                        {
+                            "Id": 1,
+                            "Text": "I'm glad I came",
+                            "NextDialogue": 3
+                        },
+                        {
+                            "Id": 2,
+                            "Text": "I should leave",
+                            "NextDialogue": 4
+                        }
+                    ]
+                },
+                {
+                    "Id": 3,
+                    "Speaker": "Alice",
+                    "Text": "Let's spend some time together!",
+                    "SpeakerEmotion": "happy",
+                    "ListenerEmotion": "happy",
+                    "NextDialogue": -2
+                },
+                {
+                    "Id": 4,
+                    "Speaker": "Alice",
+                    "Text": "Oh... I understand...",
+                    "SpeakerEmotion": "sad",
+                    "ListenerEmotion": "sad",
+                    "NextDialogue": 0
+                }
+            ]
+        },
+        {
+            "Id": 2,
+            "DialogueList": [
+                {
+                    "Id": 1,
+                    "Speaker": "Alice",
+                    "Text": "I'm so happy",
+                    "SpeakerEmotion": "happy",
+                    "ListenerEmotion": "happy",
+                    "NextDialogue": 2
+                }
+            ]
+        }
+    ]
+}

@@ -14,12 +14,12 @@ public class DialogueManager : MonoBehaviour
 
     private void Start()
     {
-        string jsonPath = Application.dataPath + "/dialogue.json";
+        string jsonPath = Application.dataPath + "/Scripts/UI/Scenes.json";
         if (File.Exists(jsonPath))
         {
             string jsonContent = File.ReadAllText(jsonPath);
-            var totalDialogues = JsonUtility.FromJson<Scene>(jsonContent);
-            Dialogues = totalDialogues.Dialogues.ToArray();
+            var scenes = JsonUtility.FromJson<SceneWrapper>(jsonContent);
+            Dialogues = scenes.Scenes[0].DialogueList.ToArray();
         }
         else
         {
