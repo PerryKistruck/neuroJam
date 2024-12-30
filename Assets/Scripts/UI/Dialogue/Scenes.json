@@ -5,18 +5,20 @@
             "DialogueList": [
                 {
                     "Id": 1,
-                    "Speaker": "Alice",
+                    "Speaker": "Player",
+                    "Listener": "Neuro",
                     "Text": "Hi! I've been waiting for you!",
-                    "SpeakerEmotion": "happy",
-                    "ListenerEmotion": "surprised",
+                    "SpeakerEmotion": "Happy",
+                    "ListenerEmotion": "Surprised",
                     "NextDialogue": 2
                 },
                 {
                     "Id": 2,
-                    "Speaker": "Bob",
+                    "Speaker": "Vedal",
+                    "Listener": "Player",
                     "Text": "Oh, I didn't know you'd be here!",
-                    "SpeakerEmotion": "surprised",
-                    "ListenerEmotion": "happy",
+                    "SpeakerEmotion": "Surprised",
+                    "ListenerEmotion": "Happy",
                     "Choices": [
                         {
                             "Id": 1,
@@ -32,18 +34,20 @@
                 },
                 {
                     "Id": 3,
-                    "Speaker": "Alice",
+                    "Speaker": "Player",
+                    "Listener": "Neuro",
                     "Text": "Let's spend some time together!",
-                    "SpeakerEmotion": "happy",
-                    "ListenerEmotion": "happy",
+                    "SpeakerEmotion": "Happy",
+                    "ListenerEmotion": "Happy",
                     "NextDialogue": -2
                 },
                 {
                     "Id": 4,
-                    "Speaker": "Alice",
+                    "Speaker": "Player",
+                    "Listener": "Neuro",
                     "Text": "Oh... I understand...",
-                    "SpeakerEmotion": "sad",
-                    "ListenerEmotion": "sad",
+                    "SpeakerEmotion": "Sad",
+                    "ListenerEmotion": "Sad",
                     "NextDialogue": 0
                 }
             ]
@@ -53,10 +57,11 @@
             "DialogueList": [
                 {
                     "Id": 1,
-                    "Speaker": "Alice",
+                    "Speaker": "Player",
+                    "Listener": "Neuro",
                     "Text": "I'm so happy",
-                    "SpeakerEmotion": "happy",
-                    "ListenerEmotion": "happy",
+                    "SpeakerEmotion": "Happy",
+                    "ListenerEmotion": "Happy",
                     "NextDialogue": 2
                 }
             ]

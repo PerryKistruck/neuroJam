@@ -6,33 +6,23 @@ public class Dialogue
 {
     public int Id;
     public string Speaker;
+    public string Listener;
     public string Text;
     public List<Choice> Choices;
     public string SpeakerEmotion;
     public string ListenerEmotion;
     public int NextDialogue;
 
-    public Dialogue(string id, string speaker, string text, string speakerEmotion, string listenerEmotion, string nextDialogue, List<Choice> choices)
+    public Dialogue(string id, string speaker, string listener, string text, string speakerEmotion, string listenerEmotion, string nextDialogue, List<Choice> choices)
     {
         this.Id = int.Parse(id);
         this.Speaker = speaker;
+        this.Listener = listener;
         this.Text = text;
         this.SpeakerEmotion = speakerEmotion;
         this.ListenerEmotion = listenerEmotion;
         this.NextDialogue = int.Parse(nextDialogue);
         this.Choices = choices;
-    }
-    
-    // Default constructor
-    public Dialogue()
-    {
-        Id = 0;
-        Speaker = "";
-        Text = "";
-        SpeakerEmotion = "";
-        ListenerEmotion = "";
-        NextDialogue = 0;
-        Choices = new List<Choice>();
     }
 }
 
@@ -42,12 +32,14 @@ public class Scene
     public int Id;
     public List<Dialogue> DialogueList;
 }
+
 [System.Serializable]
 public class SceneWrapper
 {
     public List<Scene> Scenes;
 }
 
+[System.Serializable]
 public class Choice
 {
     public int Id;
@@ -60,12 +52,15 @@ public class Choice
         this.Text = text;
         this.NextDialogue = int.Parse(nextDialogue);
     }
+}
 
-    // Default constructor
-    public Choice()
-    {
-        Id = 0;
-        Text = "";
-        NextDialogue = 0;
-    }
+public enum Emotion
+{
+    Neutral,
+    Happy,
+    Sad,
+    Angry,
+    Surprised,
+    Disgusted,
+    Scared
 }
